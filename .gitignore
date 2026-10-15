@@ -1,0 +1,11 @@
+*.log
+*.csv
+*.png
+*.pdf
+*.traj
+*.npz
+*.chk
+*.h5
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

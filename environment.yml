@@ -1,0 +1,15 @@
+name: fluorescence
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - matplotlib
+  - rdkit
+  - pip
+  - pip:
+      - pyscf>=2.14
+      - gpu4pyscf-cuda12x     # use gpu4pyscf-cuda11x if on CUDA 11
+      - cutensor-cu12         # use cutensor-cu11 if on CUDA 11
+      - geometric             # geomeTRIC, used by pyscf.geomopt.geometric_solver
+      - ase                   # Tier 3 only (excited-state AIMD)
